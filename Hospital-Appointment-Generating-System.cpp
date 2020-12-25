@@ -175,7 +175,7 @@ void ViewVisitors(struct Visitor V[])
 {
         for(int i=0;i<24;i++)
         {
-                if(V[i].Token!=-1)
+                if(V[i].Age!=-1)
                 {
                         cout<<"TOKEN NUMBER OF THE VISITOR :"<<V[i].Token<<"\n";
                         cout<<"NAME OF THE VISITOR:"<<V[i].Name<<"\n";
