@@ -104,18 +104,18 @@ void  SearchToken(struct Visitor V[])
 }
 void  RemoveVisitors(struct Visitor V[])
 {	
-	 	int no,index;
+	int no,index;
         cout<<"\nENTER THE TOKEN NUMBER OF THE VISITOR:";
         cin>>no;
         index=Hashcode(no);
          if(V[index].Token!=-1)
         {	
-       		V[index].Token=-1;
+       			V[index].Token=-1;
 	        	V[index].Name=-1;	
-     	   	V[index].Phnno=-1;
+	     	   	V[index].Phnno=-1;
         		V[index].Age=-1;
         		cout<<"THE VISITOR IS SUCCESSFULLY REMOVED FROM THE LIST!\n\n";
-		}
+	}
 		if (front == - 1 || front > rear)
 			return;
 		else
@@ -215,7 +215,7 @@ int main()
                               token++;
                               x.Token=token;
                               cout<<"\nENTER THE VISITOR NAME:";
-                         	cin>>x.Name;
+                              cin>>x.Name;
                               cout<<"\nENTER THE VISITOR PHONE NUMBER:";
                               cin>>x.Phnno;
                               cout<<"\nENTER THE VISITOR AGE:";
@@ -226,16 +226,15 @@ int main()
                         case 2:
                               RemoveVisitors(V);
                               break;
-                        
-					    case 3:
+			case 3:
                               cout<<"THE DETAILS OF THE VISITORS OF THE CLINIC ARE! \n\n\n";
                      	      ViewVisitors(V);
                               break;
-						case 4:
-							updateStatus(V,token);
-							break;	
+			case 4:
+				updateStatus(V,token);
+				break;	
                     	case 5:
-                    			cout<<"\nSEARCHING A PARTICLUAR TOKEN NUMBER!";
+                 		cout<<"\nSEARCHING A PARTICLUAR TOKEN NUMBER!";
                                 SearchToken(V);
                                 break;
                         case 6:
